@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cliente" representedClassName="Cliente" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImageName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="cliente" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isSender" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="messages" inverseEntity="Cliente" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cliente" positionX="178" positionY="153" width="128" height="90"/>
+        <element name="Message" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
 </model>

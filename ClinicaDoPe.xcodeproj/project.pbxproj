@@ -7,23 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477380F1E064F6BB38A17178 /* Pods_ClinicaDoPe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34F0BB83475A954A034D21C /* Pods_ClinicaDoPe.framework */; };
+		E22CA192209B742A00E3C192 /* MainTabBarUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CA191209B742A00E3C192 /* MainTabBarUserController.swift */; };
+		E279D65E2092C6E300E023CA /* UserSelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279D65B2092C6DF00E023CA /* UserSelfController.swift */; };
+		E279D65F2092C6E300E023CA /* UserSelfPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279D65C2092C6E000E023CA /* UserSelfPhotoCell.swift */; };
+		E279D6602092C6E300E023CA /* UserSelfHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279D65D2092C6E200E023CA /* UserSelfHeader.swift */; };
+		E279D6682096CCEB00E023CA /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279D6672096CCEB00E023CA /* MenuBar.swift */; };
+		E2BF3544208D2CA9002BB9C4 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF3541208D2CA4002BB9C4 /* UserProfileController.swift */; };
+		E2BF3545208D2CA9002BB9C4 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF3542208D2CA7002BB9C4 /* UserProfileHeader.swift */; };
+		E2BF3546208D2CA9002BB9C4 /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF3543208D2CA8002BB9C4 /* UserProfilePhotoCell.swift */; };
+		E2E9A4C8208AEF9D00DC8A4C /* Lista_Clientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9A4C7208AEF9D00DC8A4C /* Lista_Clientes.swift */; };
+		E2E9A4CC208D242000DC8A4C /* Extensions_URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9A4CB208D241F00DC8A4C /* Extensions_URL.swift */; };
 		E2EFCC042089A3A300D38AC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC032089A3A300D38AC1 /* AppDelegate.swift */; };
-		E2EFCC062089A3A300D38AC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC052089A3A300D38AC1 /* ViewController.swift */; };
 		E2EFCC092089A3A300D38AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFCC072089A3A300D38AC1 /* Main.storyboard */; };
 		E2EFCC0C2089A3A300D38AC1 /* ClinicaDoPe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC0A2089A3A300D38AC1 /* ClinicaDoPe.xcdatamodeld */; };
 		E2EFCC0E2089A3A300D38AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EFCC0D2089A3A300D38AC1 /* Assets.xcassets */; };
 		E2EFCC112089A3A300D38AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EFCC0F2089A3A300D38AC1 /* LaunchScreen.storyboard */; };
+		E2EFCC1B2089A3E200D38AC1 /* ExamesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC192089A3E200D38AC1 /* ExamesCell.swift */; };
+		E2EFCC1C2089A3E200D38AC1 /* ListaExamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC1A2089A3E200D38AC1 /* ListaExamesController.swift */; };
+		E2EFCC402089A3FF00D38AC1 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC1E2089A3FC00D38AC1 /* CameraController.swift */; };
+		E2EFCC412089A3FF00D38AC1 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC202089A3FC00D38AC1 /* PhotoSelectorCell.swift */; };
+		E2EFCC422089A3FF00D38AC1 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC212089A3FC00D38AC1 /* PhotoSelectorHeader.swift */; };
+		E2EFCC432089A3FF00D38AC1 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC222089A3FC00D38AC1 /* SharePhotoController.swift */; };
+		E2EFCC442089A3FF00D38AC1 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC242089A3FD00D38AC1 /* CustomImageView.swift */; };
+		E2EFCC452089A3FF00D38AC1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC252089A3FD00D38AC1 /* Extensions.swift */; };
+		E2EFCC462089A3FF00D38AC1 /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC262089A3FD00D38AC1 /* FirebaseUtils.swift */; };
+		E2EFCC472089A3FF00D38AC1 /* FireServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC272089A3FD00D38AC1 /* FireServices.swift */; };
+		E2EFCC482089A3FF00D38AC1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC292089A3FD00D38AC1 /* LoginController.swift */; };
+		E2EFCC492089A3FF00D38AC1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC2A2089A3FD00D38AC1 /* SignUpController.swift */; };
+		E2EFCC4C2089A3FF00D38AC1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC2F2089A3FE00D38AC1 /* HomeController.swift */; };
+		E2EFCC4D2089A3FF00D38AC1 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC302089A3FE00D38AC1 /* HomePostCell.swift */; };
+		E2EFCC4E2089A3FF00D38AC1 /* UserCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC322089A3FE00D38AC1 /* UserCellTest.swift */; };
+		E2EFCC4F2089A3FF00D38AC1 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC332089A3FE00D38AC1 /* UserSearchCell.swift */; };
+		E2EFCC502089A3FF00D38AC1 /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC342089A3FE00D38AC1 /* UserSearchController.swift */; };
+		E2EFCC512089A3FF00D38AC1 /* AdicionarClientesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC362089A3FE00D38AC1 /* AdicionarClientesController.swift */; };
+		E2EFCC522089A3FF00D38AC1 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC372089A3FE00D38AC1 /* ChatLogController.swift */; };
+		E2EFCC532089A3FF00D38AC1 /* ClientesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC382089A3FE00D38AC1 /* ClientesCell.swift */; };
+		E2EFCC542089A3FF00D38AC1 /* ClientesControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC392089A3FE00D38AC1 /* ClientesControllerHelper.swift */; };
+		E2EFCC552089A3FF00D38AC1 /* ListaClientesController_Antiga.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC3A2089A3FE00D38AC1 /* ListaClientesController_Antiga.swift */; };
+		E2EFCC562089A3FF00D38AC1 /* RegisterClienteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC3B2089A3FE00D38AC1 /* RegisterClienteController.swift */; };
+		E2EFCC572089A3FF00D38AC1 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC3D2089A3FF00D38AC1 /* Cliente.swift */; };
+		E2EFCC582089A3FF00D38AC1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC3E2089A3FF00D38AC1 /* Post.swift */; };
+		E2EFCC592089A3FF00D38AC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC3F2089A3FF00D38AC1 /* User.swift */; };
+		E2EFCC5C2089A42400D38AC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC5A2089A42300D38AC1 /* ViewController.swift */; };
+		E2EFCC5D2089A42400D38AC1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC5B2089A42400D38AC1 /* MainTabBarController.swift */; };
+		E2EFCC5F2089A7F200D38AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EFCC5E2089A7F200D38AC1 /* GoogleService-Info.plist */; };
+		E2EFCC612089ACDF00D38AC1 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EFCC602089ACDE00D38AC1 /* PhotoSelectorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09691AB38D85A682302D191A /* Pods-ClinicaDoPe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicaDoPe.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClinicaDoPe/Pods-ClinicaDoPe.release.xcconfig"; sourceTree = "<group>"; };
+		9CA1E39E420D4970BD40089B /* Pods-ClinicaDoPe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClinicaDoPe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClinicaDoPe/Pods-ClinicaDoPe.debug.xcconfig"; sourceTree = "<group>"; };
+		E22CA191209B742A00E3C192 /* MainTabBarUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarUserController.swift; sourceTree = "<group>"; };
+		E279D65B2092C6DF00E023CA /* UserSelfController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSelfController.swift; sourceTree = "<group>"; };
+		E279D65C2092C6E000E023CA /* UserSelfPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSelfPhotoCell.swift; sourceTree = "<group>"; };
+		E279D65D2092C6E200E023CA /* UserSelfHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSelfHeader.swift; sourceTree = "<group>"; };
+		E279D6672096CCEB00E023CA /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		E2BF3541208D2CA4002BB9C4 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		E2BF3542208D2CA7002BB9C4 /* UserProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		E2BF3543208D2CA8002BB9C4 /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
+		E2E9A4C7208AEF9D00DC8A4C /* Lista_Clientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_Clientes.swift; sourceTree = "<group>"; };
+		E2E9A4CB208D241F00DC8A4C /* Extensions_URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions_URL.swift; sourceTree = "<group>"; };
 		E2EFCC002089A3A300D38AC1 /* ClinicaDoPe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClinicaDoPe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EFCC032089A3A300D38AC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2EFCC052089A3A300D38AC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2EFCC082089A3A300D38AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EFCC0B2089A3A300D38AC1 /* ClinicaDoPe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClinicaDoPe.xcdatamodel; sourceTree = "<group>"; };
 		E2EFCC0D2089A3A300D38AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EFCC102089A3A300D38AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EFCC122089A3A300D38AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EFCC192089A3E200D38AC1 /* ExamesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamesCell.swift; sourceTree = "<group>"; };
+		E2EFCC1A2089A3E200D38AC1 /* ListaExamesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaExamesController.swift; sourceTree = "<group>"; };
+		E2EFCC1E2089A3FC00D38AC1 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		E2EFCC202089A3FC00D38AC1 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
+		E2EFCC212089A3FC00D38AC1 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		E2EFCC222089A3FC00D38AC1 /* SharePhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
+		E2EFCC242089A3FD00D38AC1 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		E2EFCC252089A3FD00D38AC1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2EFCC262089A3FD00D38AC1 /* FirebaseUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
+		E2EFCC272089A3FD00D38AC1 /* FireServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireServices.swift; sourceTree = "<group>"; };
+		E2EFCC292089A3FD00D38AC1 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E2EFCC2A2089A3FD00D38AC1 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		E2EFCC2F2089A3FE00D38AC1 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E2EFCC302089A3FE00D38AC1 /* HomePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		E2EFCC322089A3FE00D38AC1 /* UserCellTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCellTest.swift; sourceTree = "<group>"; };
+		E2EFCC332089A3FE00D38AC1 /* UserSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
+		E2EFCC342089A3FE00D38AC1 /* UserSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
+		E2EFCC362089A3FE00D38AC1 /* AdicionarClientesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarClientesController.swift; sourceTree = "<group>"; };
+		E2EFCC372089A3FE00D38AC1 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		E2EFCC382089A3FE00D38AC1 /* ClientesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientesCell.swift; sourceTree = "<group>"; };
+		E2EFCC392089A3FE00D38AC1 /* ClientesControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientesControllerHelper.swift; sourceTree = "<group>"; };
+		E2EFCC3A2089A3FE00D38AC1 /* ListaClientesController_Antiga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaClientesController_Antiga.swift; sourceTree = "<group>"; };
+		E2EFCC3B2089A3FE00D38AC1 /* RegisterClienteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterClienteController.swift; sourceTree = "<group>"; };
+		E2EFCC3D2089A3FF00D38AC1 /* Cliente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		E2EFCC3E2089A3FF00D38AC1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E2EFCC3F2089A3FF00D38AC1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2EFCC5A2089A42300D38AC1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ClinicaPe/ClinicaPe/ViewController.swift; sourceTree = "<group>"; };
+		E2EFCC5B2089A42400D38AC1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E2EFCC5E2089A7F200D38AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2EFCC602089ACDE00D38AC1 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		E34F0BB83475A954A034D21C /* Pods_ClinicaDoPe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClinicaDoPe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +113,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477380F1E064F6BB38A17178 /* Pods_ClinicaDoPe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E39AAE00737C79293B48FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34F0BB83475A954A034D21C /* Pods_ClinicaDoPe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E279D65A2092C67800E023CA /* UserSelf */ = {
+			isa = PBXGroup;
+			children = (
+				E279D65B2092C6DF00E023CA /* UserSelfController.swift */,
+				E279D65D2092C6E200E023CA /* UserSelfHeader.swift */,
+				E279D65C2092C6E000E023CA /* UserSelfPhotoCell.swift */,
+			);
+			path = UserSelf;
+			sourceTree = "<group>";
+		};
 		E2EFCBF72089A3A200D38AC1 = {
 			isa = PBXGroup;
 			children = (
 				E2EFCC022089A3A300D38AC1 /* ClinicaDoPe */,
 				E2EFCC012089A3A300D38AC1 /* Products */,
+				F469A3E4217B832B18F10029 /* Pods */,
+				8E39AAE00737C79293B48FE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +159,141 @@
 		E2EFCC022089A3A300D38AC1 /* ClinicaDoPe */ = {
 			isa = PBXGroup;
 			children = (
+				E2EFCC1F2089A3FC00D38AC1 /* AddPhoto */,
+				E2EFCC1D2089A3FC00D38AC1 /* Camera */,
+				E2EFCC352089A3FE00D38AC1 /* Clientes */,
+				E2EFCC2E2089A3FE00D38AC1 /* Home */,
+				E2EFCC282089A3FD00D38AC1 /* Login */,
+				E2EFCC3C2089A3FF00D38AC1 /* Models */,
+				E2EFCC312089A3FE00D38AC1 /* Search */,
+				E279D65A2092C67800E023CA /* UserSelf */,
+				E2EFCC2B2089A3FD00D38AC1 /* UserProfile */,
+				E2EFCC232089A3FD00D38AC1 /* Utils */,
+				E2EFCC182089A3E200D38AC1 /* Exames */,
 				E2EFCC032089A3A300D38AC1 /* AppDelegate.swift */,
-				E2EFCC052089A3A300D38AC1 /* ViewController.swift */,
+				E2EFCC5B2089A42400D38AC1 /* MainTabBarController.swift */,
+				E22CA191209B742A00E3C192 /* MainTabBarUserController.swift */,
+				E2EFCC5A2089A42300D38AC1 /* ViewController.swift */,
 				E2EFCC072089A3A300D38AC1 /* Main.storyboard */,
 				E2EFCC0D2089A3A300D38AC1 /* Assets.xcassets */,
 				E2EFCC0F2089A3A300D38AC1 /* LaunchScreen.storyboard */,
+				E2EFCC5E2089A7F200D38AC1 /* GoogleService-Info.plist */,
 				E2EFCC122089A3A300D38AC1 /* Info.plist */,
 				E2EFCC0A2089A3A300D38AC1 /* ClinicaDoPe.xcdatamodeld */,
 			);
 			path = ClinicaDoPe;
+			sourceTree = "<group>";
+		};
+		E2EFCC182089A3E200D38AC1 /* Exames */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC192089A3E200D38AC1 /* ExamesCell.swift */,
+				E2EFCC1A2089A3E200D38AC1 /* ListaExamesController.swift */,
+			);
+			path = Exames;
+			sourceTree = "<group>";
+		};
+		E2EFCC1D2089A3FC00D38AC1 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC1E2089A3FC00D38AC1 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E2EFCC1F2089A3FC00D38AC1 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC602089ACDE00D38AC1 /* PhotoSelectorController.swift */,
+				E2EFCC202089A3FC00D38AC1 /* PhotoSelectorCell.swift */,
+				E2EFCC212089A3FC00D38AC1 /* PhotoSelectorHeader.swift */,
+				E2EFCC222089A3FC00D38AC1 /* SharePhotoController.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
+		E2EFCC232089A3FD00D38AC1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC242089A3FD00D38AC1 /* CustomImageView.swift */,
+				E2EFCC252089A3FD00D38AC1 /* Extensions.swift */,
+				E2EFCC262089A3FD00D38AC1 /* FirebaseUtils.swift */,
+				E2E9A4CB208D241F00DC8A4C /* Extensions_URL.swift */,
+				E2EFCC272089A3FD00D38AC1 /* FireServices.swift */,
+				E279D6672096CCEB00E023CA /* MenuBar.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2EFCC282089A3FD00D38AC1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC292089A3FD00D38AC1 /* LoginController.swift */,
+				E2EFCC2A2089A3FD00D38AC1 /* SignUpController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2EFCC2B2089A3FD00D38AC1 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E2BF3541208D2CA4002BB9C4 /* UserProfileController.swift */,
+				E2BF3542208D2CA7002BB9C4 /* UserProfileHeader.swift */,
+				E2BF3543208D2CA8002BB9C4 /* UserProfilePhotoCell.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		E2EFCC2E2089A3FE00D38AC1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC2F2089A3FE00D38AC1 /* HomeController.swift */,
+				E2EFCC302089A3FE00D38AC1 /* HomePostCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2EFCC312089A3FE00D38AC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC322089A3FE00D38AC1 /* UserCellTest.swift */,
+				E2EFCC332089A3FE00D38AC1 /* UserSearchCell.swift */,
+				E2EFCC342089A3FE00D38AC1 /* UserSearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E2EFCC352089A3FE00D38AC1 /* Clientes */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC362089A3FE00D38AC1 /* AdicionarClientesController.swift */,
+				E2EFCC372089A3FE00D38AC1 /* ChatLogController.swift */,
+				E2EFCC382089A3FE00D38AC1 /* ClientesCell.swift */,
+				E2EFCC392089A3FE00D38AC1 /* ClientesControllerHelper.swift */,
+				E2EFCC3A2089A3FE00D38AC1 /* ListaClientesController_Antiga.swift */,
+				E2EFCC3B2089A3FE00D38AC1 /* RegisterClienteController.swift */,
+				E2E9A4C7208AEF9D00DC8A4C /* Lista_Clientes.swift */,
+			);
+			path = Clientes;
+			sourceTree = "<group>";
+		};
+		E2EFCC3C2089A3FF00D38AC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFCC3D2089A3FF00D38AC1 /* Cliente.swift */,
+				E2EFCC3E2089A3FF00D38AC1 /* Post.swift */,
+				E2EFCC3F2089A3FF00D38AC1 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F469A3E4217B832B18F10029 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CA1E39E420D4970BD40089B /* Pods-ClinicaDoPe.debug.xcconfig */,
+				09691AB38D85A682302D191A /* Pods-ClinicaDoPe.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EFCC152089A3A300D38AC1 /* Build configuration list for PBXNativeTarget "ClinicaDoPe" */;
 			buildPhases = (
+				C6504E89A1FD162700C3D3B1 /* [CP] Check Pods Manifest.lock */,
 				E2EFCBFC2089A3A200D38AC1 /* Sources */,
 				E2EFCBFD2089A3A200D38AC1 /* Frameworks */,
 				E2EFCBFE2089A3A200D38AC1 /* Resources */,
+				8D396BA889DB6CD795EA5543 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EFCC112089A3A300D38AC1 /* LaunchScreen.storyboard in Resources */,
+				E2EFCC5F2089A7F200D38AC1 /* GoogleService-Info.plist in Resources */,
 				E2EFCC0E2089A3A300D38AC1 /* Assets.xcassets in Resources */,
 				E2EFCC092089A3A300D38AC1 /* Main.storyboard in Resources */,
 			);
@@ -134,14 +366,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D396BA889DB6CD795EA5543 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClinicaDoPe/Pods-ClinicaDoPe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClinicaDoPe/Pods-ClinicaDoPe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6504E89A1FD162700C3D3B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClinicaDoPe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2EFCBFC2089A3A200D38AC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EFCC062089A3A300D38AC1 /* ViewController.swift in Sources */,
+				E2EFCC522089A3FF00D38AC1 /* ChatLogController.swift in Sources */,
+				E2EFCC502089A3FF00D38AC1 /* UserSearchController.swift in Sources */,
+				E22CA192209B742A00E3C192 /* MainTabBarUserController.swift in Sources */,
+				E2EFCC5D2089A42400D38AC1 /* MainTabBarController.swift in Sources */,
+				E2E9A4CC208D242000DC8A4C /* Extensions_URL.swift in Sources */,
+				E2EFCC532089A3FF00D38AC1 /* ClientesCell.swift in Sources */,
+				E2EFCC592089A3FF00D38AC1 /* User.swift in Sources */,
+				E2EFCC542089A3FF00D38AC1 /* ClientesControllerHelper.swift in Sources */,
+				E2EFCC462089A3FF00D38AC1 /* FirebaseUtils.swift in Sources */,
+				E2EFCC422089A3FF00D38AC1 /* PhotoSelectorHeader.swift in Sources */,
+				E2EFCC402089A3FF00D38AC1 /* CameraController.swift in Sources */,
+				E2EFCC1C2089A3E200D38AC1 /* ListaExamesController.swift in Sources */,
+				E2EFCC582089A3FF00D38AC1 /* Post.swift in Sources */,
+				E2EFCC492089A3FF00D38AC1 /* SignUpController.swift in Sources */,
+				E2EFCC412089A3FF00D38AC1 /* PhotoSelectorCell.swift in Sources */,
+				E2EFCC5C2089A42400D38AC1 /* ViewController.swift in Sources */,
+				E2EFCC4E2089A3FF00D38AC1 /* UserCellTest.swift in Sources */,
+				E2EFCC572089A3FF00D38AC1 /* Cliente.swift in Sources */,
+				E2EFCC512089A3FF00D38AC1 /* AdicionarClientesController.swift in Sources */,
+				E279D65E2092C6E300E023CA /* UserSelfController.swift in Sources */,
+				E2EFCC472089A3FF00D38AC1 /* FireServices.swift in Sources */,
+				E2EFCC562089A3FF00D38AC1 /* RegisterClienteController.swift in Sources */,
+				E279D65F2092C6E300E023CA /* UserSelfPhotoCell.swift in Sources */,
+				E2EFCC552089A3FF00D38AC1 /* ListaClientesController_Antiga.swift in Sources */,
 				E2EFCC042089A3A300D38AC1 /* AppDelegate.swift in Sources */,
+				E2BF3545208D2CA9002BB9C4 /* UserProfileHeader.swift in Sources */,
+				E2EFCC432089A3FF00D38AC1 /* SharePhotoController.swift in Sources */,
+				E2EFCC1B2089A3E200D38AC1 /* ExamesCell.swift in Sources */,
+				E2BF3544208D2CA9002BB9C4 /* UserProfileController.swift in Sources */,
+				E279D6602092C6E300E023CA /* UserSelfHeader.swift in Sources */,
 				E2EFCC0C2089A3A300D38AC1 /* ClinicaDoPe.xcdatamodeld in Sources */,
+				E2EFCC4C2089A3FF00D38AC1 /* HomeController.swift in Sources */,
+				E2EFCC452089A3FF00D38AC1 /* Extensions.swift in Sources */,
+				E2EFCC4D2089A3FF00D38AC1 /* HomePostCell.swift in Sources */,
+				E2EFCC442089A3FF00D38AC1 /* CustomImageView.swift in Sources */,
+				E279D6682096CCEB00E023CA /* MenuBar.swift in Sources */,
+				E2E9A4C8208AEF9D00DC8A4C /* Lista_Clientes.swift in Sources */,
+				E2EFCC612089ACDF00D38AC1 /* PhotoSelectorController.swift in Sources */,
+				E2EFCC4F2089A3FF00D38AC1 /* UserSearchCell.swift in Sources */,
+				E2EFCC482089A3FF00D38AC1 /* LoginController.swift in Sources */,
+				E2BF3546208D2CA9002BB9C4 /* UserProfilePhotoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +603,7 @@
 		};
 		E2EFCC162089A3A300D38AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA1E39E420D4970BD40089B /* Pods-ClinicaDoPe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +618,7 @@
 		};
 		E2EFCC172089A3A300D38AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09691AB38D85A682302D191A /* Pods-ClinicaDoPe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
