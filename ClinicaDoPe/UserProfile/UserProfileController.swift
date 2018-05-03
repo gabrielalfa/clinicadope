@@ -18,8 +18,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     var user: User?
     var clientes = [Clientes_Model]()
     
-    
-    
     var userId: String?
 
     

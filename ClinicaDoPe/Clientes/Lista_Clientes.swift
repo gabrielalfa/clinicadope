@@ -181,18 +181,22 @@ class Lista_ClientesController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         if !isEditing{
-            let layout = UICollectionViewFlowLayout()
-            let mainTab = MainTabBarUserController()
-            let userProfileController = UserProfileController(collectionViewLayout: layout)
-            let navController = UINavigationController()
             let user = self.clientes[indexPath.row]
             let id = user.id
+            
+            let layout = UICollectionViewFlowLayout()
+            let mainTab = MainTabBarUserController(userId: id)
+            let userProfileController = UserProfileController(collectionViewLayout: layout)
+            
+            let navController = UINavigationController()
+            
             userProfileController.userId = id
+            
             mainTab.userId = id
-            mainTab.addChildViewController(userProfileController)
+            
             navController.addChildViewController(mainTab)
             
-            navigationController?.showDetailViewController(mainTab, sender: nil)
+            navigationController?.showDetailViewController(navController, sender: nil)
         }
     }
     
@@ -261,10 +265,7 @@ class Lista_ClientesController: UITableViewController, UISearchBarDelegate {
             print(error)
         }
     }
-    
-    
-    
-    
+
     
 }
 

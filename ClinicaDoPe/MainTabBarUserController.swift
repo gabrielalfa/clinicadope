@@ -40,6 +40,19 @@ class MainTabBarUserController: UITabBarController, UITabBarControllerDelegate {
         return true
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    convenience init() {
+        self.init(userId: nil)
+    }
+    
+    init(userId: String?) {
+        self.userId = userId
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,9 +65,12 @@ class MainTabBarUserController: UITabBarController, UITabBarControllerDelegate {
     public func setupViewControllers_user() {
         
         tabBar.backgroundColor = .red
-    
+        let layout = UICollectionViewFlowLayout()
+        let userProfileViewController = UserProfileController(collectionViewLayout: layout)
+        userProfileViewController.userId = userId
+        
         //home
-        let userProfileController = templateNavController(unselectedImage: #imageLiteral(resourceName: "camera_white"), selectedImage: #imageLiteral(resourceName: "camera_selected"), rootViewController: UIViewController())
+        let userProfileController = templateNavController(unselectedImage: #imageLiteral(resourceName: "camera_white"), selectedImage: #imageLiteral(resourceName: "camera_selected"), rootViewController: userProfileViewController)
         
         //search
         let searchNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "dados_personal"), selectedImage: #imageLiteral(resourceName: "dados_personal_2"), rootViewController: UIViewController())
@@ -71,9 +87,9 @@ class MainTabBarUserController: UITabBarController, UITabBarControllerDelegate {
         //modify tab bar item insets
         guard let items = tabBar.items else { return }
         
-        for item in items {
-            item.imageInsets = UIEdgeInsets(top: 3, left: 0, bottom: -2, right: 0)
-        }
+//        for item in items {
+//            item.imageInsets = UIEdgeInsets(top: 3, left: 0, bottom: -3, right: 0)
+//        }
     }
     
     fileprivate func templateNavController(unselectedImage: UIImage, selectedImage: UIImage, rootViewController: UIViewController = UIViewController()) -> UINavigationController {
